@@ -427,17 +427,123 @@
 // let pedro = new Persona('Pedro', 1985, 'Contador')
 // let daniel = new Persona('Daniel', 1960, 'Maestro')
 
-let Triangle = function(a, b, c) {
-  this.a = a;
-  this.b = b;
-  this.c = c;
-}
+// let Triangle = function(a, b, c) {
+//   this.a = a;
+//   this.b = b;
+//   this.c = c;
+// }
 
-Triangle.prototype.getPerimeter = function() {
-  return this.a + this.b + this.c;
-}
+// Triangle.prototype.getPerimeter = function() {
+//   return this.a + this.b + this.c;
+// }
 
 
-let triangle = new Triangle(1, 2, 3);
-console.log(triangle); // Triangle { a: 1, b: 2, c: 3 }
-console.log(triangle.getPerimeter()); // 6
+// let triangle = new Triangle(1, 2, 3);
+// console.log(triangle); // Triangle { a: 1, b: 2, c: 3 }
+// console.log(triangle.getPerimeter()); // 6
+
+// let car = {
+//   brand: 'Nissan',
+//   model: 'Sentra',
+//   year: '2020'
+// }
+
+// console.log('Antes de agregar color: ', car);
+
+// function addColor(automovil) {
+//   let nuevoCarro = Object.assign({}, automovil, {
+//     color: 'Negro'
+//   })
+
+//   return nuevoCarro
+// }
+
+// let mismoCarro = addColor(car);
+
+// console.log('este es el nuevo auto', mismoCarro)
+// console.log('Es el mismo carro?, ', car ===mismoCarro)
+
+
+// let conejo = {
+//   orejas: 2,
+//   color: 'Blanco',
+//   tamaño: 'mediano',
+//   herbivoro: true
+// }
+
+// console.log('Objeto que describe al conejo ', conejo)
+
+// function agregarOrden(animal) {
+//   return {...animal, mamifero: true}
+// }
+
+// let conejoModificado = agregarOrden(conejo);
+
+// console.log('Nuevo conejo ', conejoModificado)
+// console.log('Son iguales? ', conejo === conejoModificado)
+
+// let cart = [
+//   {
+//     item: 'Laptop',
+//     quantity: 1
+//   }
+// ]
+
+// function addItemToCart(cart, item, quantity) {
+//   let newCart = cart.map(element => element)
+
+//   newCart.push({
+//     item: item,
+//     quantity: quantity
+//   })
+
+//   return newCart;
+// }
+
+// cart = addItemToCart(cart, 'Phone', 1);
+// console.log('segundo cart, ', cart);
+
+// cart = addItemToCart (cart, 'Book', 2);
+// console.log('tercer cart, ', cart);
+
+// function flatten(arrays) {
+//   return arrays.reduce(function(flat,current) {
+//     return flat.concat(current);
+//   }, []);
+// }
+
+// let arrays = [[1, 2, 3], [4, 5], [6]];
+// let array = flatten(arrays);
+
+// console.log(array); // [1, 2, 3, 4, 5, 6]
+
+
+// function compact(array) {
+//   return array.filter(function(elem) {
+//     return !!elem;
+//   });
+// }
+
+// let array = [0, 1, false, 2, '', 3];
+// let compactedArray = compact(array);
+
+// console.log(compactedArray); // [1, 2, 3]
+
+// function loop(start, test, update, body) {
+//   for (let i = start; test(i); i = update(i)) {
+//     body(i);
+//   }
+// }
+
+// let test = function(n) {
+//   return n > 0;
+// }
+
+// let update = function(n) {
+//   return n - 1;
+// }
+
+// loop(3, test, update, console.log);
+// // 3
+// // 2
+// // 1
